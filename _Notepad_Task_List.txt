@@ -1,12 +1,13 @@
-Tasks
+Task List
 - Add Left Side Nav for the different subjects like Magnetism
     - Make sure this can stay between different canvas/buttons/views while not causing problems to their size or overlapping.
-- Add Klaar Button to Unity and add JS compatability
+    - Example: Magnetism Tab sends you to Magnetism Folder and Highlights Magnetism in (Magnetism by default) so they know which one they're at.
+- Add Klaar Button to Unity and add JS compatability in SceneManager
     - Make it so Unity doesn't reset when switching so they can see their mistakes when going back.
-        - the information gets saved from them clicking the Klaar button.
-- Add Feedback section below the buttons that shows after pressing the klaar Button
+        - the game state information gets saved from them clicking the Klaar button.
+- Add Feedback section below the buttons that shows after pressing the klaar Button.
 - Add Feedback maximize size to right side section (Feedback Log).
-    - Add Log for all the feedback at the end. It's shown in the right side section.
+    - Add Log for all the feedback at the end. It's shown at the right side section.
     - Add a hide/minimize button for right side section (Feedback Log).
     - Make sure this can stay between switching views while not causing problems.
 - Add replace canvas view support like how Placeholders do it for the Logs when you click to maximize it.
