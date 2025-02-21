@@ -1,0 +1,106 @@
+/* Basic reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --primary-color: #4caf50;
+  --background-color: #f1f1f1;
+  --button-padding: 0.5vh 1.5vw;
+  --font-size: 1.2vw;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+}
+
+/* Main styling */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+#unity-container {
+  width: 60vw;
+  height: 100%;
+  position: relative;
+  margin-top: 5vh;
+}
+
+#unity-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.placeholder-text {
+  text-align: center;
+  font-size: 1rem;
+  padding: 15px;
+  background-color: var(--background-color);
+  margin-top: 2vh;
+  border: 1px solid #ccc;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: auto;
+  display: none;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* Buttons styling */
+.button-container {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  margin-top: 4vh;
+}
+
+button {
+  padding: var(--button-padding);
+  font-size: var(--font-size);
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 2vh 0;
+  background-color: var(--background-color);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#unity-loading-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1vh;
+  background-color: #ddd;
+}
+
+#unity-progress-bar-full {
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+#unity-warning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1vh;
+  background-color: yellow;
+  text-align: center;
+  display: none;
+}

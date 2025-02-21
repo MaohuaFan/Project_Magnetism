@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity Web Player | Project_Magnetism_Tool_2D</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Project Magnetism Tool 2D</h1>
+    </header>
+
+    <!-- Main Section: Canvas and Buttons -->
+    <main>
+      <div id="unity-container">
+        <canvas id="unity-canvas" tabindex="-1" alt="Unity game canvas"></canvas>
+        <!-- Placeholder Text (Hidden by default) -->
+        <div id="placeholder1" class="placeholder-text" style="display: none;">
+          <h2>Placeholder 1</h2>
+          <p>This is the placeholder text for the first button.</p>
+        </div>
+        <div id="placeholder2" class="placeholder-text" style="display: none;">
+          <h2>Placeholder 2</h2>
+          <p>This is the placeholder text for the second button.</p>
+        </div>
+        <div id="placeholder3" class="placeholder-text" style="display: none;">
+          <h2>Placeholder 3</h2>
+          <p>This is the placeholder text for the third button.</p>
+        </div>
+        <div id="unity-loading-bar">
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-warning"></div>
+      </div>
+
+      <!-- Buttons to load specific scenes and placeholders -->
+      <div class="button-container">
+        <!-- New Button before Scene 1 -->
+        <button onclick="showPlaceholder('placeholder1')">Placeholder 1</button>
+        <!-- Scene Buttons -->
+        <button onclick="loadScene('Scene_1')">Scene 1</button>
+        <button onclick="loadScene('Scene_2')">Scene 2</button>
+        <!-- New Button between Scene 2 and Scene 3 -->
+        <button onclick="showPlaceholder('placeholder2')">Placeholder 2</button>
+        <button onclick="loadScene('Scene_3')">Scene 3</button>
+        <!-- New Button between Scene 3 and Scene 4 -->
+        <button onclick="showPlaceholder('placeholder3')">Placeholder 3</button>
+        <button onclick="loadScene('Scene_4')">Scene 4</button>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <!-- Footer -->
+    </footer>
+
+    <!-- External Script File -->
+    <script src="script.js"></script>
+  </body>
+</html>
